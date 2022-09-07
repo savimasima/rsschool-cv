@@ -1,1 +1,60 @@
+:root {
+    --general-font-family: "Lato", sans-serif;
+}
 
+body {
+    margin-top: 100px;
+    font-family: var(--general-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 86px;
+}
+
+h3 {
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-top: 10px;
+}
+
+.hero {
+    padding: 190px 20px;
+    text-align: center;
+}
+  
+.hero h2 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 2;
+}
+
+.header {
+    padding-top: 40px;
+}
+
+.portfolio-link {
+    padding-top: 30px;
+    text-decoration: none;
+    color: var(--bs-gray-700);
+}
+
+.education-text {
+    font-size: 15px;
+}
