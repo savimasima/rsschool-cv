@@ -136,7 +136,10 @@ nav ul {
     border-radius: 25px;
     padding: 15px 70px;
     color: #FFFFFF;
-    position: absolute;
+    border: none;
+    display:block;
+    position: relative;
+    margin:0 auto;
 }
 
 .orange-ball {
@@ -157,21 +160,38 @@ nav ul {
 
 .backstage {
     padding: 140px 0;
+    justify-content: space-between;
 }
 
 .backstage-text {
-    padding-left: 55px;
-    padding-right: 0;
-    width: 460px;
+    width: 440px;
+    padding: 50px 0 50px 55px;
 }
 
 .flower1 {
-    position: absolute;
     width: 203px;
-    left: 1237px;
     height: 605px;
-    top: 792px;
     background: url(images/flower_foto1.png) no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.block-flower2 {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.flower2 {
+    width: 368px;
+    height: 275px;
+    background: url(images/flower_foto2.png) no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.flower3 {
+    width: 368px;
+    height: 275px;
+    background: url(images/flower_foto3.png) no-repeat;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -179,6 +199,7 @@ nav ul {
     max-width: 1158px;
     position: relative;
     margin: auto;
+    padding: 50px 0;
 }
   
 .mySlides {
@@ -200,26 +221,6 @@ nav ul {
     border-radius: 3px 0 0 3px;
 }
   
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-  
-  /* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-  
-  /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -241,9 +242,10 @@ nav ul {
 }
 
 .bamboo-cap {
-    width: 609px;
+    width: 600px;
+    padding: 50px 0 50px 140px;
 }
-  
+
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
