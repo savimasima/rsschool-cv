@@ -142,6 +142,10 @@ nav ul {
     margin:0 auto;
 }
 
+.btn:hover {
+    background: linear-gradient(113.96deg, #df622d 1.49%, #f0850a 101.44%);
+}
+
 .orange-ball {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     width: 465px;
@@ -582,7 +586,231 @@ nav ul {
     right: 0;
 }
   
+.footer {
+    background: #111115;
+    padding: 41px 220px 50px 220px;
+}
+  
+.footer__grid-wrap {
+    display: grid;
+    grid-template-areas:
+      'logo . form'
+      'button . .'
+      'networks navigator designer';
+}
 
+.footer__main-logo-link {
+    grid-area: logo;
+    text-decoration: none;
+    position: relative;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    width: 82px;
+    height: 52px;
+  
+    display: flex;
+    align-items: center;
+}
+
+.footer__main-logo {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer__main-logo-img {
+    position: absolute;
+    top: 27px;
+    left: 10px;
+}
+  
+.footer__subscribe-wrap {
+    grid-area: form;
+    align-self: end;
+    justify-self: end;
+}
+  
+.footer__subscribe-lable {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+
+.footer__subscribe-form {
+    padding: 14px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__subscribe-input {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 228px;
+    height: 42px;
+    border-radius: 2px;
+    border: 0.7px solid #f9804b;
+    background: #111115;
+    color: #bdbdbd;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.footer__subscribe-submit-button {
+    width: 129px;
+    height: 42px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #d31414;
+    border: 0.7px solid #d31414;
+  
+    background: #f1f3f2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.footer__subscribe-input:valid ~ .footer__subscribe-submit-button {
+    border: 1px solid #333b41;
+    border-radius: 5px;
+    color: #000000;
+}
+  
+.footer__donate-button {
+    margin: 35px 0 0 0;
+    grid-area: button;
+    align-self: center;
+    width: 298px;
+    height: 54px;
+    border-radius: 5px;
+    background: #f9804b;
+    cursor: pointer;
+    border: 0;
+}
+
+.footer__donate-button-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+  
+.footer__donate-button:hover {
+    background: #e47209;
+}
+  
+.footer__networks-wrap {
+    margin: 46px 0 0 0;
+    grid-area: networks;
+    list-style: none;
+    padding: 0;
+    align-self: end;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.footer__networks {
+    display: flex;
+    gap: 12px;
+}
+  
+.footer__networks-logo-wrap {
+    width: 26px;
+    height: 26px;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 50%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer__networks-facebook {
+    background-image: url('../../images/faceebook.svg');
+}
+  
+.footer__networks-twitter {
+    background-image: url('../../images/tweeter.svg');
+}
+.footer__networks-instagram {
+    background-image: url('../../images/insta.svg');
+}
+
+.footer__networks-youtube {
+    background-image: url('../../images/youtube.svg');
+}
+  
+.footer__networks-logo {
+    align-self: center;
+}
+  
+.footer__networks {
+    text-decoration: none;
+}
+
+.footer__networks-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+  
+.footer__navigator {
+    grid-area: navigator;
+    align-self: end;
+    justify-self: end;
+    padding: 0 0 0 37px;
+}
+
+.footer__navigator-wrap {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 58px;
+  }
+
+.footer__navigator-item-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+}
+  
+.footer__navigator-item-link:hover {
+    color: #f9804b;
+}
+  
+.footer__navigator-item-link_active {
+    cursor: default;
+    color: #f9804b;
+}
+
+.footer__designer {
+    justify-self: end;
+    align-self: end;
+    grid-area: designer;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+  
+.footer__designer-copyright {
+    margin: 10px 0 0 0;
+}
+  
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
