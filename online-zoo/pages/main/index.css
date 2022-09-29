@@ -778,7 +778,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     gap: 58px;
-  }
+}
 
 .footer__navigator-item-link {
     text-decoration: none;
@@ -842,7 +842,6 @@ nav ul {
 }
 
 .donate-main-title {
-    font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 130%;
@@ -867,9 +866,8 @@ nav ul {
   
 .donate-main__pick-and-feed {
     margin-top: 60px;
-    padding: 40px 92px 62px 92px;
+    padding: 40px 92px;
     box-sizing: border-box;
-    width: 1160px;
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
     border-radius: 20px;
@@ -897,6 +895,7 @@ nav ul {
   
 .donate-main__donate-container {
     padding: 60px 0 0 0;
+    justify-content: center;
 }
   
 .donate-main__counter {
@@ -955,8 +954,8 @@ nav ul {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    margin: 0;
     color: #000000;
+    text-align: center;
 }
 
 .donate-main__slider-input {
@@ -1146,17 +1145,13 @@ nav ul {
     width: 268px;
     padding: 16px 0px 16px 9px;
     margin: 0 0 0 15px;
-    border: 0;
-    border-radius: 2px;
     background-color: transparent;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     color: #929699;
-    outline: none;
-    background-image: url(../../images/dollar.svg);
-    background-repeat: no-repeat;
-    background-position: right 19px bottom 17px;
+    border: 1px solid #929699;
+    border-radius: 2px;
 }
   
 .donate-main__payment-amount-logo {
@@ -1241,7 +1236,7 @@ input[type='number'] {
     opacity: 1;
 }
   
-  .donate-main__payment-button {
+.donate-main__payment-button {
     width: 298px;
     height: 54px;
     padding: 0 0 0 8px;
@@ -1269,6 +1264,12 @@ input[type='number'] {
     align-self: center;
     color: #333b41;
 }  
+
+.social_link {
+    width: 18px;
+    height: 12.99px;
+    padding: 5px;
+}
   
 @-webkit-keyframes fade {
     from {opacity: .4}
